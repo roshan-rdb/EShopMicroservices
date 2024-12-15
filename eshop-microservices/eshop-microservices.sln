@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{66BF345A-A8DC-4732-B7A7-C49A2A31C82D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{3679F212-051C-48AC-87B8-553B69A54DFE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "..\src\Services\Catalog\Catalog.API\Catalog.API.csproj", "{C3BC0036-A70B-46B4-A0EF-78015EBCC445}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{A6E79374-78DC-49DF-B781-B63C5FA0360E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlock", "..\src\BuildingBlocks\BuildingBlock\BuildingBlock.csproj", "{DE1937AC-0095-48C3-8A84-69308CEAEB47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,10 @@ Global
 		{C3BC0036-A70B-46B4-A0EF-78015EBCC445}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3BC0036-A70B-46B4-A0EF-78015EBCC445}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3BC0036-A70B-46B4-A0EF-78015EBCC445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE1937AC-0095-48C3-8A84-69308CEAEB47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE1937AC-0095-48C3-8A84-69308CEAEB47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE1937AC-0095-48C3-8A84-69308CEAEB47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE1937AC-0095-48C3-8A84-69308CEAEB47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,5 +34,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3679F212-051C-48AC-87B8-553B69A54DFE} = {66BF345A-A8DC-4732-B7A7-C49A2A31C82D}
 		{C3BC0036-A70B-46B4-A0EF-78015EBCC445} = {3679F212-051C-48AC-87B8-553B69A54DFE}
+		{DE1937AC-0095-48C3-8A84-69308CEAEB47} = {A6E79374-78DC-49DF-B781-B63C5FA0360E}
 	EndGlobalSection
 EndGlobal
