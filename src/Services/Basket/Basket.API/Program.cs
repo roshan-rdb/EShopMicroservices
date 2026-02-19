@@ -17,6 +17,7 @@ builder.Services.AddMediatR(config =>
     config.AddOpenBehavior(typeof(ValidationBehavior<,>));
     config.AddOpenBehavior(typeof(LoggingBehavior<,>));
 });
+
 //Data Services
 builder.Services.AddMarten(opts =>
 {
