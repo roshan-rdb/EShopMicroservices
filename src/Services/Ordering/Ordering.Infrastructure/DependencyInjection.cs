@@ -10,7 +10,8 @@ public static class DependencyInjection
     {
         var connectionString = configuration.GetConnectionString("Database");
 
-        // services.AddDbContentext<ApplicationDbContext>(OptionsBuilderConfigurationExtensions => options.)
+        services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(connectionString));
 
         return services;
 
