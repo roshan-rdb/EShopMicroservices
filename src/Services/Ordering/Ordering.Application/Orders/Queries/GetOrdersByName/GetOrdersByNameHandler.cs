@@ -15,7 +15,6 @@ public class GetOrdersByNameHandler(IApplicationDbContext dbContext)
                .ToListAsync(cancellationToken);
 
         return new GetOrdersByNameResult(orders.ToOrderDtoList());
-
     }
 
 }
