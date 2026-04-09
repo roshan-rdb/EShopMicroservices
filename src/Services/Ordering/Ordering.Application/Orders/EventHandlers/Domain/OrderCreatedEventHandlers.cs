@@ -7,7 +7,7 @@ public class OrderCreatedEventHandlers(IPublishEndpoint publishEndpoint, IFeatur
 {
     public async Task Handle(OrderCreatedEvent domainEvent, CancellationToken cancellationToken)
     {
-        logger.LogInformation("Domain Event handled: {DomainEvent}", notification.GetType().Name);
+        logger.LogInformation("Domain Event handled: {DomainEvent}", domainEvent.GetType().Name);
 
         if(await featureManager.IsEnabledAsync("OrderFullfillment"))
         {
